@@ -1,0 +1,52 @@
+{
+  "name": "express-rest-api-boilerplate",
+  "version": "1.0.0",
+  "description": "Production-ready RESTful APIs using Node.js, Express and Mongodb boilerplate 2022",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/knaazimkhan/express-rest-api-boilerplate.git"
+  },
+  "keywords": [
+    "node",
+    "node.js",
+    "express",
+    "rest",
+    "api",
+    "boilerplate",
+    "mongodb",
+    "mongoose",
+    "nosql",
+    "es6",
+    "es7",
+    "es8",
+    "es9",
+    "joi",
+    "prettier",
+    "jwt",
+    "passport"
+  ],
+  "author": "Naazim Khan <knaazimkhan@gmail.com>",
+  "license": "MIT",
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "bugs": {
+    "url": "https://github.com/knaazimkhan/express-rest-api-boilerplate/issues"
+  },
+  "homepage": "https://github.com/knaazimkhan/express-rest-api-boilerplate#readme",
+  "imports": {
+    "#config/*": "./src/config/*",
+    "#constants/*": "./src/constants/*",
+    "#controllers/*": "./src/controllers/*",
+    "#middlewares/*": "./src/middlewares/*",
+    "#models/*": "./src/models/*",
+    "#routes/v1": "./src/routes/v1/",
+    "#services/*": "./src/services/*",
+    "#utils/*": "./src/utils/*",
+    "#validations/*": "./src/validations/*"
+  }
+}
