@@ -3,8 +3,10 @@
   "version": "1.0.0",
   "description": "Production-ready RESTful APIs using Node.js, Express and Mongodb boilerplate 2022",
   "main": "src/index.js",
+  "type": "module",
   "scripts": {
-    "dev": ""
+    "start": "node --es-module-specifier-resolution=node src/index.js",
+    "dev": "nodemon --es-module-specifier-resolution=node src/index.js"
   },
   "repository": {
     "type": "git",
