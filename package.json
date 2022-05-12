@@ -47,9 +47,9 @@
     "#middlewares/*": "./src/middlewares/*",
     "#models": "./src/models/",
     "#routes/v1": "./src/routes/v1/",
-    "#services/*": "./src/services/*",
+    "#services": "./src/services/",
     "#utils/*": "./src/utils/*",
-    "#validations/*": "./src/validations/*"
+    "#validations": "./src/validations/"
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",

@@ -2,7 +2,7 @@ import mongoose from 'mongoose';
 import validator from 'validator';
 import bcryptjs from 'bcryptjs';
 
-// import { toJSON, paginate } from './plugins';
+import { toJSON, paginate } from './plugins';
 import { roles } from '#config/roles';
 
 const { Schema, model } = mongoose;
@@ -55,8 +55,8 @@ const userSchema = Schema(
 );
 
 // add plugin that converts mongoose to json
-// userSchema.plugin(toJSON);
-// userSchema.plugin(paginate);
+userSchema.plugin(toJSON);
+userSchema.plugin(paginate);
 
 userSchema.statics.isEmailTaken = async function (email, excludeUserId) {
   const user = await this.findOne({ email, _id: { $ne: excludeUserId } });

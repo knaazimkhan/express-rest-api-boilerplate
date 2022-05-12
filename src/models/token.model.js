@@ -1,6 +1,6 @@
 import mongoose from 'mongoose';
 
-// import { toJSON } from './plugins';
+import { toJSON } from './plugins';
 import { tokenTypes } from '#config/tokens';
 
 const { Schema, SchemaTypes, model } = mongoose;
@@ -37,7 +37,7 @@ const tokenSchema = Schema(
 );
 
 // add plugin that converts mongoose to json
-// tokenSchema.plugin(toJSON);
+tokenSchema.plugin(toJSON);
 
 const Token = model('Token', tokenSchema);
 
